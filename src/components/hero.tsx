@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
 
+const heroImage = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/hero-santiago.jpg`;
+
 export function Hero() {
   return (
     <section
@@ -14,8 +16,7 @@ export function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('/hero-santiago.jpg'), linear-gradient(145deg, #07131f 0%, #142536 48%, #1a3a45 100%)",
+            backgroundImage: `url('${heroImage}'), linear-gradient(145deg, #07131f 0%, #142536 48%, #1a3a45 100%)`,
           }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_30%,rgba(63,125,110,0.35),transparent_55%),radial-gradient(ellipse_at_80%_70%,rgba(200,185,154,0.18),transparent_50%)]" />

@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  // Expose to client so CSS background urls honor project Pages basePath
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   ...(basePath
     ? {
         basePath,
