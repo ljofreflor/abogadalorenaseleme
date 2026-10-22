@@ -1,9 +1,24 @@
 import type { NextConfig } from "next";
 
+/**
+ * GitHub Pages (project site): set basePath to /<repo>
+ * User/org site (ljofreflor.github.io) or custom domain: leave empty.
+ * In Actions we pass BASE_PATH=/<repo> automatically.
+ */
+const basePath = (process.env.BASE_PATH ?? "").replace(/\/$/, "");
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
+  ...(basePath
+    ? {
+        basePath,
+        assetPrefix: basePath,
+      }
+    : {}),
   turbopack: {
     rules: {
       "*.css": {
