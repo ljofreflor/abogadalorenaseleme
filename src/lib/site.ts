@@ -1,4 +1,4 @@
-/** Contact details marked PLACEHOLDER until the client confirms. */
+/** Address/hours remain provisional until the client confirms. */
 export const site = {
   brand: "Abogada Lorena Seleme",
   shortBrand: "Lorena Seleme",
@@ -8,10 +8,10 @@ export const site = {
   headline: "Defensa seria, lenguaje claro.",
   city: "Santiago, Chile",
   contact: {
-    email: "contacto@abogadalorenaseleme.cl", // PLACEHOLDER
-    phoneDisplay: "+56 9 8765 4321", // PLACEHOLDER
-    phoneTel: "+56987654321", // PLACEHOLDER
-    whatsapp: "56987654321", // PLACEHOLDER
+    email: "lorenaselemecarmona@gmail.com",
+    phoneDisplay: "+56 9 6249 8069",
+    phoneTel: "+56962498069",
+    whatsapp: "56962498069",
     address: "Av. Providencia 1208, oficina 604, Providencia, Santiago", // PLACEHOLDER
     hours: "Lunes a viernes, 9:00–18:00", // PLACEHOLDER
   },
