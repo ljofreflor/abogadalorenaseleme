@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { site } from "@/lib/site";
 
@@ -7,17 +8,17 @@ export function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
         <Reveal>
           <figure className="relative mx-auto aspect-[3/4] w-full max-w-md overflow-hidden lg:mx-0 lg:max-w-none">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/lorena-corporativa.png"
-              alt="Abogada Lorena Seleme"
-              className="absolute inset-0 size-full object-cover object-[center_15%]"
-              width={896}
-              height={1200}
+              alt="Lorena Seleme, abogada"
+              fill
+              sizes="(max-width: 1024px) 28rem, 36vw"
+              className="object-cover object-[center_18%]"
+              priority={false}
             />
             <div
               aria-hidden
-              className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/10"
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-soft/55 via-transparent to-transparent"
             />
           </figure>
         </Reveal>
