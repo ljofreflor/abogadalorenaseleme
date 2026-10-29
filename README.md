@@ -36,4 +36,4 @@ Deploy: workflow `.github/workflows/deploy-github-pages.yml` (push a `main`). Ch
 
 ## Contenido provisional
 
-Teléfono, WhatsApp, correo y dirección de oficina son **placeholders** plausibles para Chile hasta confirmar datos reales con la clienta. Ver `src/lib/site.ts`.
+Correo y WhatsApp están confirmados en `src/lib/site.ts`. Dirección y horario de oficina siguen como placeholders hasta confirmar datos definitivos.

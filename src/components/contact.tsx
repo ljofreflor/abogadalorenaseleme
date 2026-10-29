@@ -99,8 +99,8 @@ export function Contact() {
         </dl>
 
         <p className="mt-10 text-xs text-muted-foreground">
-          Datos de contacto provisionales (placeholders) hasta confirmar
-          teléfono, correo y dirección reales.
+          Dirección y horario de oficina son provisionales hasta confirmar
+          datos definitivos.
         </p>
       </div>
     </section>
