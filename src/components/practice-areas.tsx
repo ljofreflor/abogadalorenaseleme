@@ -13,8 +13,9 @@ export function PracticeAreas() {
             Acompañamiento jurídico en lo que más importa.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Atención personalizada en materias de familia, trabajo, civil y
-            sucesiones, con respuestas concretas y plazos realistas.
+            Atención personalizada en familia, trabajo, civil, sucesiones,
+            tributario, penal e inteligencia artificial, con respuestas
+            concretas y plazos realistas.
           </p>
         </Reveal>
 

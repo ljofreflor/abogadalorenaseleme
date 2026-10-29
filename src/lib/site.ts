@@ -36,6 +36,21 @@ export const site = {
       description:
         "Posesión efectiva, particiones y planificación sucesoria para ordenar el patrimonio familiar con menos fricción.",
     },
+    {
+      title: "Tributario",
+      description:
+        "Declaraciones, fiscalizaciones del SII, reorganizaciones y planificación tributaria para personas y empresas. Respuestas concretas ante riesgos y plazos.",
+    },
+    {
+      title: "Penal",
+      description:
+        "Defensa y acompañamiento en causas penales: formalizaciones, medidas cautelares y salidas alternativas, con claridad en cada etapa del proceso.",
+    },
+    {
+      title: "Inteligencia artificial",
+      description:
+        "Asesoría en usos de IA, protección de datos, contratos tecnológicos y cumplimiento normativo para proyectos y organizaciones que adoptan estas herramientas.",
+    },
   ],
   about: {
     title: "Sobre Lorena",
