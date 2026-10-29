@@ -31,9 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build static export
-        env:
-          # Project Pages: /abogadalorenaseleme — omit for user site or custom domain
-          BASE_PATH: /${{ github.event.repository.name }}
+        # Apex custom domain https://abogadalorenaseleme.cl/ — no BASE_PATH
         run: npm run build
 
       - name: Upload Pages artifact
