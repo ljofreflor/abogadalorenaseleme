@@ -11,16 +11,16 @@ export function Hero() {
         aria-hidden
         className="animate-hero-drift absolute inset-0 origin-center"
       >
+        {/* Full-bleed corporate portrait */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-[position:68%_18%] sm:bg-[position:72%_15%]"
           style={{
-            backgroundImage:
-              "url('/hero-santiago.jpg'), linear-gradient(145deg, #07131f 0%, #142536 48%, #1a3a45 100%)",
+            backgroundImage: "url('/lorena-corporativa.png')",
           }}
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_30%,rgba(63,125,110,0.35),transparent_55%),radial-gradient(ellipse_at_80%_70%,rgba(200,185,154,0.18),transparent_50%)]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/92 via-ink/78 to-ink/45" />
-        <div className="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_25%,transparent_15%,rgba(7,19,31,0.35)_55%,rgba(7,19,31,0.88)_100%)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/25 sm:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-ink/50" />
       </div>
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col justify-end px-5 pb-16 pt-28 sm:px-8 sm:pb-20 lg:justify-center lg:pb-24">
