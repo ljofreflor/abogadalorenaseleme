@@ -43,9 +43,10 @@
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-mist: var(--mist);
-  --color-navy: var(--navy);
-  --color-navy-deep: var(--navy-deep);
-  --color-signal: var(--signal);
+  --color-fog: var(--fog);
+  --color-wine: var(--wine);
+  --color-wine-deep: var(--wine-deep);
+  --color-steel: var(--steel);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -56,46 +57,47 @@
 }
 
 :root {
-  /* Corporate Chilean firm: navy + white + restrained signal red (not purple/cream) */
-  --ink: #0b1c2c;
-  --ink-soft: #132536;
-  --mist: #f4f6f8;
-  --navy: #0f2a44;
-  --navy-deep: #0a1a2b;
-  --signal: #9c2f2f;
+  /* Corporate Chilean law-firm: navy + wine, cool grays (BYE-inspired, not copied) */
+  --ink: #252a3f;
+  --ink-soft: #1c2032;
+  --mist: #f4f4f5;
+  --fog: #fafafa;
+  --wine: #8f2f2d;
+  --wine-deep: #742624;
+  --steel: #6b6c70;
 
-  --background: #f4f6f8;
-  --foreground: #0b1c2c;
+  --background: #fafafa;
+  --foreground: #252a3f;
   --card: #ffffff;
-  --card-foreground: #0b1c2c;
+  --card-foreground: #252a3f;
   --popover: #ffffff;
-  --popover-foreground: #0b1c2c;
-  --primary: #0f2a44;
-  --primary-foreground: #f7f9fb;
-  --secondary: #e6ebf0;
-  --secondary-foreground: #0f2a44;
-  --muted: #e8edf2;
-  --muted-foreground: #5a6b7a;
-  --accent: #e8eef4;
-  --accent-foreground: #0f2a44;
+  --popover-foreground: #252a3f;
+  --primary: #8f2f2d;
+  --primary-foreground: #fafafa;
+  --secondary: #efefef;
+  --secondary-foreground: #252a3f;
+  --muted: #efefef;
+  --muted-foreground: #6b6c70;
+  --accent: #efefef;
+  --accent-foreground: #252a3f;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #d5dde5;
-  --input: #d5dde5;
-  --ring: #0f2a44;
-  --chart-1: #0f2a44;
-  --chart-2: #5a6b7a;
-  --chart-3: #9c2f2f;
-  --chart-4: #132536;
-  --chart-5: #3d5568;
-  --radius: 0.125rem;
+  --border: #d8d8da;
+  --input: #d8d8da;
+  --ring: #8f2f2d;
+  --chart-1: #8f2f2d;
+  --chart-2: #6b6c70;
+  --chart-3: #252a3f;
+  --chart-4: #d1d1d1;
+  --chart-5: #742624;
+  --radius: 0.25rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #0b1c2c;
-  --sidebar-primary: #0f2a44;
-  --sidebar-primary-foreground: #f7f9fb;
-  --sidebar-accent: #e8eef4;
-  --sidebar-accent-foreground: #0f2a44;
-  --sidebar-border: #d5dde5;
-  --sidebar-ring: #0f2a44;
+  --sidebar-foreground: #252a3f;
+  --sidebar-primary: #8f2f2d;
+  --sidebar-primary-foreground: #fafafa;
+  --sidebar-accent: #efefef;
+  --sidebar-accent-foreground: #252a3f;
+  --sidebar-border: #d8d8da;
+  --sidebar-ring: #8f2f2d;
 }
 
 @layer base {
@@ -110,10 +112,20 @@
   }
 }
 
+@keyframes hero-drift {
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.05) translate(-1%, 0.8%);
+  }
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(0.85rem);
+    transform: translateY(1.25rem);
   }
   to {
     opacity: 1;
@@ -130,28 +142,33 @@
   }
 }
 
+.animate-hero-drift {
+  animation: hero-drift 24s ease-in-out infinite;
+}
+
 .animate-fade-up {
-  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .animate-fade-up-delay-1 {
-  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
+  animation: fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
 }
 
 .animate-fade-up-delay-2 {
-  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+  animation: fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.28s both;
 }
 
 .animate-fade-up-delay-3 {
-  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+  animation: fade-up 0.95s cubic-bezier(0.22, 1, 0.36, 1) 0.4s both;
 }
 
 .animate-line-draw {
   transform-origin: left;
-  animation: line-draw 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+  animation: line-draw 1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .animate-hero-drift,
   .animate-fade-up,
   .animate-fade-up-delay-1,
   .animate-fade-up-delay-2,

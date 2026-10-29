@@ -8,23 +8,23 @@ const links = [
 
 export function SiteHeader() {
   return (
-    <header className="absolute inset-x-0 top-0 z-20 border-b border-navy/10 bg-white/90 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
+    <header className="absolute inset-x-0 top-0 z-20">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-5 sm:px-8 sm:py-6">
         <a
           href="#inicio"
-          className="font-display text-xl font-semibold tracking-[0.04em] text-navy uppercase sm:text-2xl"
+          className="font-display text-lg font-semibold tracking-[0.04em] text-white uppercase sm:text-xl"
         >
           {site.shortBrand}
         </a>
         <nav
           aria-label="Principal"
-          className="flex items-center gap-5 text-[0.8rem] font-medium tracking-[0.12em] text-navy/70 uppercase sm:gap-8"
+          className="flex items-center gap-5 text-sm font-medium tracking-wide text-white/75 sm:gap-8"
         >
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="transition-colors hover:text-navy"
+              className="transition-colors hover:text-white"
             >
               {link.label}
             </a>

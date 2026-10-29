@@ -12,14 +12,13 @@ export function Contact() {
     <section id="contacto" className="bg-mist px-5 py-24 sm:px-8 sm:py-32">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="text-[0.75rem] font-medium tracking-[0.22em] text-navy/55 uppercase">
+          <p className="text-xs font-semibold tracking-[0.22em] text-wine uppercase">
             Contacto
           </p>
-          <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-[0.02em] text-navy uppercase sm:text-5xl">
+          <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
             Conversemos sobre su caso.
           </h2>
-          <div className="mt-6 h-0.5 w-14 bg-signal" />
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Escriba o llame para coordinar una primera consulta. Respuesta en
             horario laboral, de lunes a viernes.
           </p>
@@ -30,39 +29,39 @@ export function Contact() {
             <Button
               render={<a href={whatsappHref} target="_blank" rel="noreferrer" />}
               size="lg"
-              className="h-11 rounded-none bg-navy px-6 text-sm font-medium tracking-[0.08em] text-white uppercase hover:bg-navy-deep"
+              className="h-11 rounded-sm bg-wine px-6 text-base text-white hover:bg-wine-deep"
             >
-              WhatsApp
+              Escribir por WhatsApp
             </Button>
             <Button
               render={<a href={`mailto:${contact.email}`} />}
               variant="outline"
               size="lg"
-              className="h-11 rounded-none border-navy/30 bg-transparent px-6 text-sm font-medium tracking-[0.08em] text-navy uppercase hover:bg-navy/5"
+              className="h-11 rounded-sm border-ink/20 bg-transparent px-6 text-base text-ink hover:bg-ink/5"
             >
-              Correo
+              Enviar correo
             </Button>
             <Button
               render={<a href={`tel:${contact.phoneTel}`} />}
               variant="outline"
               size="lg"
-              className="h-11 rounded-none border-navy/30 bg-transparent px-6 text-sm font-medium tracking-[0.08em] text-navy uppercase hover:bg-navy/5"
+              className="h-11 rounded-sm border-ink/20 bg-transparent px-6 text-base text-ink hover:bg-ink/5"
             >
               Llamar
             </Button>
           </div>
         </Reveal>
 
-        <dl className="mt-16 grid gap-10 border-t border-navy/15 pt-12 sm:grid-cols-3">
+        <dl className="mt-16 grid gap-10 border-t border-ink/12 pt-12 sm:grid-cols-3">
           <Reveal delayMs={60}>
             <div>
-              <dt className="text-[0.7rem] font-medium tracking-[0.18em] text-navy/55 uppercase">
+              <dt className="text-xs font-semibold tracking-[0.18em] text-wine uppercase">
                 Correo
               </dt>
               <dd className="mt-3">
                 <a
                   href={`mailto:${contact.email}`}
-                  className="text-lg text-navy underline-offset-4 hover:underline"
+                  className="text-lg text-ink underline-offset-4 hover:underline"
                 >
                   {contact.email}
                 </a>
@@ -71,13 +70,13 @@ export function Contact() {
           </Reveal>
           <Reveal delayMs={120}>
             <div>
-              <dt className="text-[0.7rem] font-medium tracking-[0.18em] text-navy/55 uppercase">
+              <dt className="text-xs font-semibold tracking-[0.18em] text-wine uppercase">
                 Teléfono / WhatsApp
               </dt>
               <dd className="mt-3">
                 <a
                   href={`tel:${contact.phoneTel}`}
-                  className="text-lg text-navy underline-offset-4 hover:underline"
+                  className="text-lg text-ink underline-offset-4 hover:underline"
                 >
                   {contact.phoneDisplay}
                 </a>
@@ -86,10 +85,10 @@ export function Contact() {
           </Reveal>
           <Reveal delayMs={180}>
             <div>
-              <dt className="text-[0.7rem] font-medium tracking-[0.18em] text-navy/55 uppercase">
+              <dt className="text-xs font-semibold tracking-[0.18em] text-wine uppercase">
                 Oficina
               </dt>
-              <dd className="mt-3 text-lg leading-snug text-navy">
+              <dd className="mt-3 text-lg leading-snug text-ink">
                 {contact.address}
               </dd>
               <dd className="mt-1 text-sm text-muted-foreground">

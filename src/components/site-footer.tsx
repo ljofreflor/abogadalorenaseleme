@@ -2,13 +2,13 @@ import { site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="bg-navy-deep px-5 py-12 text-white/65 sm:px-8">
+    <footer className="bg-ink-soft px-5 py-12 text-white/55 sm:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="font-display text-2xl font-semibold tracking-[0.04em] text-white uppercase">
+          <p className="font-display text-xl font-semibold tracking-tight text-white">
             {site.brand}
           </p>
-          <p className="mt-2 text-sm tracking-wide">
+          <p className="mt-2 text-sm">
             {site.city} · {site.domain}
           </p>
         </div>
