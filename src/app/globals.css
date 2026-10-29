@@ -43,9 +43,9 @@
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-mist: var(--mist);
-  --color-sage: var(--sage);
-  --color-sage-deep: var(--sage-deep);
-  --color-champagne: var(--champagne);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-signal: var(--signal);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -56,46 +56,46 @@
 }
 
 :root {
-  /* Andes ink: cool navy + sage, not purple/cream/terracotta */
-  --ink: #07131f;
-  --ink-soft: #142536;
-  --mist: #edf2f6;
-  --sage: #3f7d6e;
-  --sage-deep: #2c5c51;
-  --champagne: #c8b99a;
+  /* Corporate Chilean firm: navy + white + restrained signal red (not purple/cream) */
+  --ink: #0b1c2c;
+  --ink-soft: #132536;
+  --mist: #f4f6f8;
+  --navy: #0f2a44;
+  --navy-deep: #0a1a2b;
+  --signal: #9c2f2f;
 
-  --background: #edf2f6;
-  --foreground: #0d1b28;
-  --card: #f7fafc;
-  --card-foreground: #0d1b28;
-  --popover: #f7fafc;
-  --popover-foreground: #0d1b28;
-  --primary: #2c5c51;
-  --primary-foreground: #f4f8f6;
-  --secondary: #d9e4ec;
-  --secondary-foreground: #142536;
-  --muted: #e2eaf0;
-  --muted-foreground: #4d6274;
-  --accent: #dce8e4;
-  --accent-foreground: #1a3d36;
+  --background: #f4f6f8;
+  --foreground: #0b1c2c;
+  --card: #ffffff;
+  --card-foreground: #0b1c2c;
+  --popover: #ffffff;
+  --popover-foreground: #0b1c2c;
+  --primary: #0f2a44;
+  --primary-foreground: #f7f9fb;
+  --secondary: #e6ebf0;
+  --secondary-foreground: #0f2a44;
+  --muted: #e8edf2;
+  --muted-foreground: #5a6b7a;
+  --accent: #e8eef4;
+  --accent-foreground: #0f2a44;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #c9d6e0;
-  --input: #c9d6e0;
-  --ring: #3f7d6e;
-  --chart-1: #2c5c51;
-  --chart-2: #4d6274;
-  --chart-3: #c8b99a;
-  --chart-4: #142536;
-  --chart-5: #3f7d6e;
-  --radius: 0.5rem;
-  --sidebar: #f7fafc;
-  --sidebar-foreground: #0d1b28;
-  --sidebar-primary: #2c5c51;
-  --sidebar-primary-foreground: #f4f8f6;
-  --sidebar-accent: #dce8e4;
-  --sidebar-accent-foreground: #1a3d36;
-  --sidebar-border: #c9d6e0;
-  --sidebar-ring: #3f7d6e;
+  --border: #d5dde5;
+  --input: #d5dde5;
+  --ring: #0f2a44;
+  --chart-1: #0f2a44;
+  --chart-2: #5a6b7a;
+  --chart-3: #9c2f2f;
+  --chart-4: #132536;
+  --chart-5: #3d5568;
+  --radius: 0.125rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0b1c2c;
+  --sidebar-primary: #0f2a44;
+  --sidebar-primary-foreground: #f7f9fb;
+  --sidebar-accent: #e8eef4;
+  --sidebar-accent-foreground: #0f2a44;
+  --sidebar-border: #d5dde5;
+  --sidebar-ring: #0f2a44;
 }
 
 @layer base {
@@ -110,20 +110,10 @@
   }
 }
 
-@keyframes hero-drift {
-  0%,
-  100% {
-    transform: scale(1) translate(0, 0);
-  }
-  50% {
-    transform: scale(1.06) translate(-1.5%, 1%);
-  }
-}
-
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(1.25rem);
+    transform: translateY(0.85rem);
   }
   to {
     opacity: 1;
@@ -140,33 +130,28 @@
   }
 }
 
-.animate-hero-drift {
-  animation: hero-drift 22s ease-in-out infinite;
-}
-
 .animate-fade-up {
-  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 .animate-fade-up-delay-1 {
-  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both;
 }
 
 .animate-fade-up-delay-2 {
-  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.24s both;
+  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
 }
 
 .animate-fade-up-delay-3 {
-  animation: fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.36s both;
+  animation: fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
 }
 
 .animate-line-draw {
   transform-origin: left;
-  animation: line-draw 1s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
+  animation: line-draw 0.85s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-hero-drift,
   .animate-fade-up,
   .animate-fade-up-delay-1,
   .animate-fade-up-delay-2,
