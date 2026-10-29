@@ -12,7 +12,7 @@ export const site = {
     phoneDisplay: "+56 9 6249 8069",
     phoneTel: "+56962498069",
     whatsapp: "56962498069",
-    address: "Félix de Amesti 923, Las Condes",
+    address: "Félix de Amesti 923, Las Condes (Chile)",
     hours: "Lunes a viernes, 9:00–18:00", // PLACEHOLDER
   },
   practiceAreas: [
