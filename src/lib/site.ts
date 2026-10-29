@@ -1,4 +1,4 @@
-/** Address/hours remain provisional until the client confirms. */
+/** Hours remain provisional until the client confirms. */
 export const site = {
   brand: "Abogada Lorena Seleme",
   shortBrand: "Lorena Seleme",
@@ -6,13 +6,13 @@ export const site = {
   tagline:
     "Asesoría jurídica clara y cercana para personas y familias en Chile.",
   headline: "Defensa seria, lenguaje claro.",
-  city: "Santiago, Chile",
+  city: "Las Condes, Chile",
   contact: {
     email: "lorenaselemecarmona@gmail.com",
     phoneDisplay: "+56 9 6249 8069",
     phoneTel: "+56962498069",
     whatsapp: "56962498069",
-    address: "Av. Providencia 1208, oficina 604, Providencia, Santiago", // PLACEHOLDER
+    address: "Félix de Amesti 923, Las Condes",
     hours: "Lunes a viernes, 9:00–18:00", // PLACEHOLDER
   },
   practiceAreas: [

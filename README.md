@@ -36,4 +36,4 @@ Deploy: workflow `.github/workflows/deploy-github-pages.yml` (push a `main`). Ch
 
 ## Contenido provisional
 
-Correo y WhatsApp están confirmados en `src/lib/site.ts`. Dirección y horario de oficina siguen como placeholders hasta confirmar datos definitivos.
+Correo, WhatsApp y dirección están en `src/lib/site.ts`. El horario de oficina sigue como placeholder hasta confirmar el dato definitivo.
